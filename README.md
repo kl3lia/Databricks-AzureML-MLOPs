@@ -161,4 +161,4 @@ This can be done in the Environments section of your Azure Pipelines.
 - Use Databricks automated clusters (job clusters) instead of Interactive clusters.
 - Multi-Stage pipelines are very nice; but they might become harder to maintain. Think about separating your pipelines and connecting them together.
 
-_Disclaimer:_ This work is inspired by and based on efforts done by Sascha Dittman.
+_Disclaimer:_ This work is inspired by and based on efforts done by Sascha Dittman & Ahmed Mostafa.
