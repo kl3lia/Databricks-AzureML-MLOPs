@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  databricks.host: https://adb-3824043001233242.2.azuredatabricks.net
+  databricks.host:  <https://adb-YOUR-ADB-CLUSTER.azuredatabricks.net>
   databricks.notebook.path: /MLOpsDemo
   devops.repo.notebook.path: notebooks/MLOpsDemo
   databricks.cluster.name: mlopscluster-devops 
