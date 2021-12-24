@@ -2,9 +2,8 @@
 # MLOps with AzureML & Databricks for Real Time Inference
 ## How to implement MLOps using Azure Devops, Databricks, MLFlow, Azure ML
 
-Operationalizing Data Analytics and Machine Learning workloads can be challenging; because the ecosystem of platforms and services involved used to build such workloads is big; which increases the complexity of deploying such workloads to production. The complexity also increases with the continous adoption of running in containers and using container orchestration frameworks such as Kubernetes.
 
-This repo demonstrates an approach of implementing DevOps pipelines for large-scale Data Analytics and Machine Learning (also called Data/MLOps) using a combination of [Azure Databricks](https://azure.microsoft.com/en-us/services/databricks/), [MLFlow](http://mlflow.org), and [AzureML](https://azure.microsoft.com/en-us/services/machine-learning/).
+This repo implements MLOPs for large-scale  Machine Learning operaltionalization using [Azure Databricks](https://azure.microsoft.com/en-us/services/databricks/), [MLFlow](http://mlflow.org), and [AzureML](https://azure.microsoft.com/en-us/services/machine-learning/).
 
 The DevOps pipeline is implemented in [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/), and it deploys the workload in a containerized form simulating staging & production environments to [Azure Container Services](https://azure.microsoft.com/en-us/product-categories/containers/) and [Azure Kubernetes Services](https://azure.microsoft.com/en-us/services/kubernetes-service/).
 
