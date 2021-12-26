@@ -45,7 +45,7 @@ Create the MLFlow experiment  in the Databricks workspace.
 
 ## Create SPN 
 
-Create a Service Principal in your Azure Active Directory and give it contributor permissions to the resource group where your Azure Machine Learning workspace is deployed. 
+Create a  [Service Principal] (https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) in your Azure Active Directory and give it contributor permissions to the resource group where your Azure Machine Learning workspace is deployed. 
 
 ## Set up The Build Pipeline
 
