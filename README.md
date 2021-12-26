@@ -74,10 +74,10 @@ List of Pipeline Variables required:
 *  subscription_id: your subscription id
 *  workspace_location: the region used to deploy your Azure Machine Learning workspace
 *  workspace_name: your Azure Machine Learning workspace name
-*  resource_group: your Azure Machie Leatning resource group
+*  resource_group: your Azure Machie Learning resource group
 *  databricks.notebook.path: Notebook path in the Databricks workspace
 *  devops.repo.notebook.path: Notebook path in the DevOps repo
-*  databricks.token
+*  databricks.token: Databricks access token
 
 ![Azure Pipeline Variables](./images/02AddingGitHubSecrets.png)
 
