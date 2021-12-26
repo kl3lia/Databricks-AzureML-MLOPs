@@ -27,7 +27,7 @@ In your Azure subsciption,  [create an Azure Databricks workspace](https://docs.
 In Azure DevOps,  [create a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#create-a-project) to host your MLOps pipeline.
 
 
-### Connecting Azure Databricks Notebooks to the Azure DevOps *Repo*
+### Connect Azure Databricks Notebooks to the Azure DevOps Repo
 
 Connect your notebooks to the Azure DevOps repo. To configure this, go to the "User Settings" and click on "Git Integration". ![databricks and azure devops integration](./images/databricks-git-devops.png)
 
