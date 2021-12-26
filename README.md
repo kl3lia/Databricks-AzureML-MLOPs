@@ -18,11 +18,11 @@ This repo is configured to serve real-time model inference. Real-time or online 
 
 You will need the following resources to get started:
 
-### Azure Databricks Workspace
+## Azure Databricks Workspace
 
 In your Azure subsciption,  [create an Azure Databricks workspace](https://docs.azuredatabricks.net/getting-started/try-databricks.html#step-2-create-a-databricks-workspace) on its own resource group.
 
-### Azure Machine Learning Workspace
+## Azure Machine Learning Workspace
 
 In your Azure subscription, [create an Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/quickstart-create-resources#create-the-workspace) on its own resource group. No need to add compute.
 
@@ -31,11 +31,11 @@ In your Azure subscription, [create an Azure Machine Learning workspace](https:/
 In Azure DevOps,  [create a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#create-a-project) to host your MLOps pipeline.
 
 
-### Connect Azure Databricks Notebooks to the Azure DevOps Repo
+## Connect Azure Databricks Notebooks to the Azure DevOps Repo
 
 Connect your notebooks to the Azure DevOps repo. To configure this, go to the "User Settings" and click on "Git Integration". ![databricks and azure devops integration](./images/databricks-git-devops.png)
 
-### Create MLFlow Experiment
+## Create MLFlow Experiment
 Create the MLFlow experiment  in the Databricks workspace.
 
 ![databricks mlflow experiment](./images/mlflow-experiment.png)
