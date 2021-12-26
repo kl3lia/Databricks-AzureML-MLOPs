@@ -68,11 +68,7 @@ This token must be stored as encrypted secret in your Azure DevOps Build Pipelin
 
 ![Azure Pipeline Variables](./images/02AddingPipelineVariables.png)
 
-... or your GitHub Project.
 
-![Adding an Azure Pipeline Variable](./images/01AddingGitHubSecrets.png "Adding a GitHub Secret")
-
-> NOTE: The GitHub Secret must be called *DATABRICKS_TOKEN*
 
 ![Azure Pipeline Variables](./images/02AddingGitHubSecrets.png)
 
