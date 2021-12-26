@@ -11,7 +11,7 @@ This repo implements MLOPs for large-scale  Machine Learning operaltionalization
 
 ## Real-time Inference
 
-This repo is configured to serve real-time model inference. Real-time or online inference enables low-latency scoring with immediate prediction outputs. The model is exposed via a REST API, deployed as a managed web server on a Azure container instance (dev/test environment) of Azure kubernetes cluster (production). 
+This repo is configured to serve real-time model inference. Real-time or online inference enables low-latency scoring with immediate prediction outputs available. The model is exposed via a REST API, deployed as a managed web server on a Azure container instance (dev/test environment) of Azure kubernetes cluster (production). 
 
 # How to deploy this project 
 
