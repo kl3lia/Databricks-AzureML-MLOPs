@@ -67,7 +67,7 @@ This token must be stored as encrypted secret named  *databricks.token* in your 
 
 ![Azure Pipeline Variables](./images/02AddingPipelineVariables.png)
 
-List of Variables required for the pipeline:
+List of Pipeline Variables required:
 * clinet_id: The SPN clinet id
 * clinet_secret: The SPN secret
 *  tenant_id: The SPN tenant id
