@@ -9,13 +9,9 @@ This repo implements MLOPs for large-scale  Machine Learning operaltionalization
 
 
 
-## Using This Sample Project
+## Real-time Inference
 
-This repo is configured to run and use Azure DevOps, therefore you need to prepare you enviroment with the following steps.
-
-The DevOps Pipeline is a "multi-staged" pipeline and it is defined using the YAML file [azure-pipelines.yml](./azure-pipelines.yml) for Azure DevOps. 
-
-> Note: Building Github workflow actions is in progress as well.
+This repo is configured to serve real-time model inference. Real-time or online inference enables low-latency scoring with immediate prediction outputs. The model is exposed via a REST API, deployed as a managed web server on a docker container (dev/test environment) of Azure kubernetes cluster (production). 
 
 ## Required Accounts And Resources
 
