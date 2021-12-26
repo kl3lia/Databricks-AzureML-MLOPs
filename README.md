@@ -28,14 +28,14 @@ In your Azure subscription, [create an Azure Machine Learning workspace](https:/
 
 ## Import This DevOps Project
 
-In Azure DevOps,  [create a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#create-a-project) to host your MLOps pipeline.
+In Azure DevOps,  [create a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#create-a-project) to host your MLOps pipeline. Import the code to your DevOps repo.
 
 
 ## Connect Azure Databricks Notebooks to the Azure DevOps Repo
 
 Connect your notebooks to the Azure DevOps repo. To configure this, go to the "User Settings" and click on "Git Integration". ![databricks and azure devops integration](./images/databricks-git-devops.png)
 
-## Create MLFlow Experiment
+## Create an MLFlow Experiment
 Create the MLFlow experiment  in the Databricks workspace.
 
 ![databricks mlflow experiment](./images/mlflow-experiment.png)
