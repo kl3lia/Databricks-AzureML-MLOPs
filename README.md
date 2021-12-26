@@ -82,7 +82,7 @@ List of Variables required for the pipeline:
 ![Azure Pipeline Variables](./images/02AddingGitHubSecrets.png)
 
 
-Note the variable section in  the  [azure-pipelines.yml](./azure-pipelines.yml) file. Ensure you set the *detabricks.host* to your Databricks Workspace url. 
+Note the variable section in  the  [azure-pipelines.yml](./azure-pipelines.yml) file. Ensure you set the *databricks.host* to your Databricks Workspace url. 
 
 
 
