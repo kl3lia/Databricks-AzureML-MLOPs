@@ -13,11 +13,11 @@ This repo implements MLOPs for large-scale  Machine Learning operaltionalization
 
 This repo is configured to serve real-time model inference. Real-time or online inference enables low-latency scoring with immediate prediction outputs. The model is exposed via a REST API, deployed as a managed web server on a docker container (dev/test environment) of Azure kubernetes cluster (production). 
 
-## Required Accounts And Resources
+## How to deploy this project 
+## Required Resources & pre-configuration steps 
 
 This example uses Azure DevOps as an CI/CD toolset, as well as Microsoft Azure services to host the trained Machine Learning Model.
 
-* At the time of creating this tutorial, GitHub Actions were still beta. If you wan't to try this new feature, you have to [Sign up for the beta](https://github.com/features/actions) first.
 
 ### Azure Databricks Workspace
 
@@ -46,6 +46,7 @@ Clicking on the above link will open a screen where you can specify the name of 
 
 ![databricks mlflow creation](./images/mlflow-creation.png)
 
+### Create SPN 
 
 ## Set up The Build Pipeline
 
