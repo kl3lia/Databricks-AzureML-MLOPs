@@ -13,11 +13,10 @@ This repo implements MLOPs for large-scale  Machine Learning operaltionalization
 
 This repo is configured to serve real-time model inference. Real-time or online inference enables low-latency scoring with immediate prediction outputs. The model is exposed via a REST API, deployed as a managed web server on a docker container (dev/test environment) of Azure kubernetes cluster (production). 
 
-## How to deploy this project 
+# How to deploy this project 
 ## Required Resources & pre-configuration steps 
 
-This example uses Azure DevOps as an CI/CD toolset, as well as Microsoft Azure services to host the trained Machine Learning Model.
-
+You will need the following resources to get started:
 
 ### Azure Databricks Workspace
 
