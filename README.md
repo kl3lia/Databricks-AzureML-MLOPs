@@ -51,7 +51,7 @@ Create a  [Service Principal](https://docs.microsoft.com/en-us/azure/active-dire
 
 Use the  [azure-pipelines.yml](./azure-pipelines.yml) file to create your  Build Pipeline.
 
-This Build Pipeline is using  "[Multi-Stage Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)".  [Enable this feature](https://docs.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops).
+This Build Pipeline is using  "[Multi-Stage Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)".  [Enable this feature](https://docs.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops). The staging setp is deploying the model to an Azure Container instance for dev/test purposes. The final step is promoting the model to Azure Kubernetes deployment representing the production stage. 
 
 ![Azure DevOps multi-stage-pipeline](./images/multi-stage-pipeline.png)
 
