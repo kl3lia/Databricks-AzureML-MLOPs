@@ -20,7 +20,11 @@ You will need the following resources to get started:
 
 ### Azure Databricks Workspace
 
-In your Azure subsciption,  [create an Azure Databricks workspace](https://docs.azuredatabricks.net/getting-started/try-databricks.html#step-2-create-a-databricks-workspace).
+In your Azure subsciption,  [create an Azure Databricks workspace](https://docs.azuredatabricks.net/getting-started/try-databricks.html#step-2-create-a-databricks-workspace) on its own resource group.
+
+### Azure Machine Learning Workspace
+
+In your Azure subscription, [create an Azure Machine Learning workspace](https://docs.microsoft.com/en-us/azure/machine-learning/quickstart-create-resources#create-the-workspace) on its own resource group. No need to add compute.
 
 ## Import This DevOps Project
 
