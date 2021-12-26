@@ -67,12 +67,22 @@ This token must be stored as encrypted secret named  *databricks.token* in your 
 
 ![Azure Pipeline Variables](./images/02AddingPipelineVariables.png)
 
-
+List of Variables required for the pipeline:
+* clinet_id: The SPN clinet id
+* clinet_secret: The SPN secret
+*  tenant_id: The SPN tenant id
+*  subscription_id: your subscription id
+*  workspace_location: the region used to deploy your Azure Machine Learning workspace
+*  workspace_name: your Azure Machine Learning workspace name
+*  resource_group: your Azure Machie Leatning resource group
+*  databricks.notebook.path: Notebook path in the Databricks workspace
+*  devops.repo.notebook.path: Notebook path in the DevOps repo
+*  databricks.token
 
 ![Azure Pipeline Variables](./images/02AddingGitHubSecrets.png)
 
 
-
+Note the variable section in  the  [azure-pipelines.yml](./azure-pipelines.yml) file. Ensure you set the *detabricks.host* to your Databricks Workspace url. 
 
 
 
