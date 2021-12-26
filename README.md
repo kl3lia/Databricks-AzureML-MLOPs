@@ -15,7 +15,6 @@ This repo is configured to serve real-time model inference. Real-time or online 
 
 # How to deploy this project 
 
-## Required Resources & pre-configuration steps 
 
 You will need the following resources to get started:
 
