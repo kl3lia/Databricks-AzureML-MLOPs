@@ -68,8 +68,8 @@ This token must be stored as encrypted secret named  *databricks.token* in your 
 ![Azure Pipeline Variables](./images/02AddingPipelineVariables.png)
 
 List of Pipeline Variables required:
-* clinet_id: The SPN clinet id
-* clinet_secret: The SPN secret
+* client_id: The SPN clinet id
+* client_secret: The SPN secret
 *  tenant_id: The SPN tenant id
 *  subscription_id: your subscription id
 *  workspace_location: the region used to deploy your Azure Machine Learning workspace
