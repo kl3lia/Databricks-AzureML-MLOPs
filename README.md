@@ -14,6 +14,7 @@ This repo implements MLOPs for large-scale  Machine Learning operaltionalization
 This repo is configured to serve real-time model inference. Real-time or online inference enables low-latency scoring with immediate prediction outputs. The model is exposed via a REST API, deployed as a managed web server on a docker container (dev/test environment) of Azure kubernetes cluster (production). 
 
 # How to deploy this project 
+
 ## Required Resources & pre-configuration steps 
 
 You will need the following resources to get started:
@@ -22,7 +23,7 @@ You will need the following resources to get started:
 
 In your Azure subsciption,  [create an Azure Databricks workspace](https://docs.azuredatabricks.net/getting-started/try-databricks.html#step-2-create-a-databricks-workspace).
 
-## Importing This DevOps Project
+## Import This DevOps Project
 
 In Azure DevOps,  [create a project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops#create-a-project) to host your MLOps pipeline.
 
@@ -98,59 +99,6 @@ az ad sp create-for-rbac -n "http://MLOps-Databricks" --role contributor --scope
 
 > Make a note of the result of this command, as you will need it in a later step.
 
-### Step 2: Install / Update Databricks CLI
 
-Azure Databricks has its own place to store secrets.
-
-At the time of creating this example, this store can be only accessed via the Databricks command-line interface (CLI).
-
-Although not required, but you can install this CLI on your local machine or in the Azure Cloud Shell.
-
-``` bash
-pip install -U databricks-cli
-```
-
-> NOTE: You need python 2.7.9 or later / 3.6 or later to install and use the Databricks command-line interface (CLI) 
-
-### Step 3 (optional): Store Databricks Secrets
-
-Using the Databricks CLI, you can now create your own section (scope) for your secrets...
-
-``` bash
-databricks secrets create-scope --scope azureml
-```
-
-... and add the required secrets to the scope.
-
-``` bash
-# Use the "tenant" property from the Azure AD Service Principal command output
-databricks secrets put --scope azureml --key tenant_id
-# Use the "appId" property from the Azure AD Service Principal command output
-databricks secrets put --scope azureml --key client_id
-# Use the "password" property from the Azure AD Service Principal command output
-databricks secrets put --scope azureml --key client_secret
-
-databricks secrets put --scope azureml --key subscription_id
-databricks secrets put --scope azureml --key resource_group
-databricks secrets put --scope azureml --key workspace_name
-```
-> NOTE: The Azure DevOps Pipeline installs and defines these secrets automatically. Databricks Secrets Scopes can be passed as parameters to give flexibility to the Notebook using secrets between environments. 
-
-## OPTIONAL: Pre-Approval Checks (Azure DevOps)
-
-To avoid high costs from the Azure Kubernetes Service, which will be created by the "Deploy To Production" stage, I recommend that you [set up a Pre-Approval Check](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops) for the drinks-quality-production environment.
-
-This can be done in the Environments section of your Azure Pipelines.
-
-![Azure Pipeline Environments](./images/Environments.png)
-
-## Issues & Take aways & TO DOs:
-
-- Notebooks should be configured to pull variables from Databricks Secrets
-- Notebooks secrets values should be defined in separate Secrets Scopes.
-  - Secret Scopes can be set to the same variable, is updated using Databricks CLI, from the Azure DevOps pipeline.
-- Manage AzureML workspace & Environments from within Azure DevOps pipeline instead of the Python SDK (within Databricks notebooks).
-- Use Databricks automated clusters (job clusters) instead of Interactive clusters.
-- Multi-Stage pipelines are very nice; but they might become harder to maintain. Think about separating your pipelines and connecting them together.
 
 _Disclaimer:_ This work is inspired by and based on efforts done by Sascha Dittman & Ahmed Mostafa.
